@@ -1,6 +1,7 @@
 /**
  * Created by David Pohan <david.pohan@keyup.eu> on 3/12/2016.
  */
+// TODO enable imports (es7)
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
