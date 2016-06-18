@@ -1,5 +1,7 @@
 # Menu
 
+#!!!Add tests!!!
+
 # Intention
 Decide, among colleagues, to which restaurant to go.
 
@@ -71,6 +73,8 @@ Decide, among colleagues, to which restaurant to go.
 - ###Future ideas
     - Currency set by language
     - Use react-redux-router
+    - Use redux-sagas
+    - Use redux-reselect
     
 - ###Big agenda
     - Be [progressive](https://developers.google.com/web/progressive-web-apps/)
