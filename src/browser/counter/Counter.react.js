@@ -1,8 +1,7 @@
 /**
  * Created by David Pohan <david.pohan@keyup.eu> on 3/12/2016.
  */
-import React, {PropTypes} from 'react';
-import Component from 'react-pure-render/component';
+import React, {PropTypes, Component} from 'react';
 import {connect} from 'react-redux';
 import * as counterActions from '../../common/counter/actions';
 
@@ -17,11 +16,21 @@ class Page extends Component {
         const {clickCount, increaseClickCount, resetClickCount} = this.props;
 
         return (
-            <div>
-                <p>Click count: {clickCount}</p>
-                <button onClick={increaseClickCount}>Click me!</button>
-                <button onClick={resetClickCount}>Reset</button>
-            </div>
+          <div>
+            <p>Click count: {clickCount}</p>
+            <button
+              className="btn danger"
+              onClick={increaseClickCount}
+            >
+                Click me!
+            </button>
+            <button
+              className="default"
+              onClick={resetClickCount}
+            >
+                Reset
+            </button>
+          </div>
         );
     }
 }
