@@ -8,8 +8,6 @@ const basePath = '..';
 
 module.exports = {
     entry: [
-        // IE hot reload
-        // 'eventsource-polyfill',
         'webpack-hot-middleware/client',
         path.join(__dirname, basePath, 'src/browser/index.js')
     ],
@@ -26,7 +24,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel',
                 query: {
-                    presets: ['es2015', 'stage-0', 'react', 'react-native'],
+                    presets: ['es2015', 'stage-0', 'react'],
                     env: {
                         development: {
                             presets: ['react-hmre']
